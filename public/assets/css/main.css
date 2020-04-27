@@ -1,0 +1,269 @@
+html,body{
+    width: 845px;
+    height: 507px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 845px;
+    height: 507px;
+
+    position: relative;
+    border: rgba(0,0,0,0) solid 1px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#logo1{
+    position: absolute;
+    width: 110px;
+    height: 51px;
+    top: 2%;
+    left: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../images/logo_1.png);
+}
+#logo2{
+    position: absolute;
+    width: 76px;
+    height: 99px;
+    top: 0px;
+    left: 100%;
+    left: calc(100% - 96px);
+    left: -moz-calc(100% - 96px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../images/logo_2.png);
+}
+
+#title{
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 0px;
+    margin-left: 160px;
+
+    font-family: 'MaxLF-SemiBold';
+    font-size: 20px;
+    color: #003676;
+    text-align: left;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+#title span{
+    display: block;
+    font-family: 'Max-Bold';
+    font-size: 26px;
+    color: #4D86BB;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#instrucciones{
+    z-index: 2100;
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    background-color: #FFD000;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    align-items: center;
+    top: 80%;
+    padding: 0px 20px;
+    /*box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.5);*/
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
+}
+.instrucciones-on{
+    left: 100%;
+    left: calc(100% - 300px);
+    left: -moz-calc(100% - 300px);
+}
+.instrucciones-off{
+    left: 100%;
+}
+
+#instrucciones p{
+    display: block;
+    font-family: 'Max-Regular';
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    line-height: normal;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+#botones{
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    height: calc(51px * 2);
+    height: -moz-calc(51px * 2);
+    top: 130px;
+    left: 100%;
+    left: calc(100% - 51px);
+    left: -moz-calc(100% - 51px);
+}
+
+#botones > div{
+    position: relative;   
+    display: block;
+    width: 41px;
+    height: 41px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#reload-btn,
+#help-btn{
+    outline: none !important;
+    outline-width: 0 !important;
+    position: relative;   
+    display: block;
+    width: 41px;
+    height: 41px;
+    top: 0px;
+    left: 0px;
+
+    border-radius: 0px 0px 5px 0px;
+    background-color: #FFCF04;
+    border: none;
+
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    
+    transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s, background-color 0.3s, box-shadow 0.3s, top 0.3s, left 0.3s;
+    -webkit-transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s, background-color 0.3s, box-shadow 0.3s, top 0.3s, left 0.3s;
+}
+
+#reload-btn:hover,
+#help-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    top: -5px;
+    left: -5px;
+
+    background-color: #D1AA07;
+    /*box-shadow: -5px 5px 6px -2px rgba(0,0,0,0.8);*/
+}
+
+#reload-btn{background-image: url(../images/undo-icon.svg);}
+#help-btn{background-image: url(../images/ayuda-icon.svg);}
+
+/******************CARTA*****************/
+
+#cartas-cont{
+    position: relative;
+    width: 750px;
+    height: 360px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.carta-cont{
+    width: 115px;
+    height: 168px;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-left: calc((100% - (115px * 6)) / 12);
+    margin-right: calc((100% - (115px * 6)) / 12);
+    margin-bottom: 12px;
+    cursor: pointer;
+    perspective: 400px;
+
+    transition: transform 0.4s, -webkit-transform 0.4s, -o-transform 0.4s, opacity 0.4s, box-shadow 0.2s;
+    -webkit-transition: transform 0.4s, -webkit-transform 0.4s, -o-transform 0.4s, opacity 0.4s, box-shadow 0.2s;
+}
+/*.carta-cont:hover{
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.8);
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}*/
+
+.carta-cont-off{
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    opacity: 0;
+}
+.carta-cont-on{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+
+.carta-reves{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(../cards/reverse.png);
+
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
+
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear, -o-transform 0.1s linear, box-shadow 0.2s;
+    -webkit-transition: transform 0.1s linear, -webkit-transform 0.1s linear, -o-transform 0.1s linear, box-shadow 0.2s;
+}
+.carta-reves:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.3);
+}
+.carta-frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
+
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+    /*box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.3);*/
+
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear, -o-transform 0.1s linear, box-shadow 0.2s;
+    -webkit-transition: transform 0.1s linear, -webkit-transform 0.1s linear, -o-transform 0.1s linear, box-shadow 0.2s;
+}
+ 

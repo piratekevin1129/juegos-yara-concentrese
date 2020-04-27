@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Max-Bold';
+    src: url('fonts/Max-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Max-Regular';
+    src: url('fonts/Max-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Max-SemiBold';
+    src: url('fonts/Max-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaxLF-Bold';
+    src: url('fonts/MaxLF-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaxLF-Light';
+    src: url('fonts/MaxLF-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaxLF-Regular';
+    src: url('fonts/MaxLF-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaxLF-SemiBold';
+    src: url('fonts/MaxLF-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

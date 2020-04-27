@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-BA787772FA09878435AF06F14AE42A25" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="ORG-86300F1C2E8D24E7DA8849CAED7DC31C-juego-concentrese">
+    <organization identifier="ORG-86300F1C2E8D24E7DA8849CAED7DC31C-juego-concentrese" structure="hierarchical">
+      <title>Juego Yara - Concéntrese</title>
+      <item identifier="ITEM-194C180DD7B259431B3E15D68025267F-juego-concentrese" isvisible="true" identifierref="RES-CE89DE9F5D82508D397D1209AB586D6C-juego-concentrese">
+        <title>Juego Yara - Concéntrese</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-CE89DE9F5D82508D397D1209AB586D6C-juego-concentrese" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
+      <file href="public/assets/js/scormfunctions.js" />
+    </resource>
+  </resources>
+</manifest>
+
