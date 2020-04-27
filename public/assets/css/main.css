@@ -3,6 +3,8 @@ html,body{
     height: 507px;
     overflow: hidden;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 #container{

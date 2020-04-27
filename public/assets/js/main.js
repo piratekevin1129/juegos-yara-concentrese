@@ -292,6 +292,7 @@ function clickReorganizar(){
     if(gano_juego){
         //window.location.reload(true)
         //location.href = window.location
+        //location.reload() 
     }else{
         var carta_ind = 0
         encontradas = 0
