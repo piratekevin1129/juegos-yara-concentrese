@@ -130,3 +130,57 @@
     line-height: normal;
     margin-left: 50px;
 }
+
+@media (min-width: 280px) and (max-width: 529px){
+    #tiempo-msg{
+        width: 125px;
+        height: 60px;
+        transition: none;
+        -webkit-transition: none;
+        align-items: flex-start;
+        
+        top: 11%;
+    }   
+    .tiempo-msg-on{
+        left: initial !important;
+        right: 0px;
+    }
+    .tiempo-msg-off{
+        left: 100% !important;
+    }
+    #tiempo-msg-relojito-txt{
+        width: 100%;
+        width: calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        font-size: 13px;
+        margin-left: 30px;
+    }
+    #tiempo-msg-relojito-record{
+        width: 100%;
+        width: calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        font-size: 12px;
+        margin-left: 30px;
+    }
+
+    .tiempo-msg-relojito{
+        width: 20px;
+        height: 20px;
+        
+        top: 50%;
+        top: calc(50% - 10px);
+        top: -moz-calc(50% - 10px);
+        left: 0px;
+        animation: none;
+        animation: unset;
+        -webkit-animation: none;
+        -webkit-animation: unset;
+    }
+    
+    .tiempo-msg-aguja{
+        animation: none;
+        animation: unset;
+        -webkit-animation: none;
+        -webkit-animation: unset;
+    }
+}

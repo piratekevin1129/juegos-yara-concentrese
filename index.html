@@ -8,6 +8,7 @@
     <link href="public/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="public/assets/css/timer.css" rel="stylesheet" type="text/css" />
     <link href="public/assets/css/cargador.css" rel="stylesheet" type="text/css" />
+    <link href="public/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
     <script language="javascript" src="public/assets/js/scormfunctions.js"></script>
 </head>
@@ -59,8 +60,10 @@
 <script src="public/assets/js/cargador.js"></script>
 <script src="public/assets/js/timer.js"></script>
 <script src="public/assets/js/scorm.js"></script>
+<script src="public/assets/js/prepare.js"></script>
 
 <script>
+    prepareWindow()
     var campana_mp3 = null
     var entrada_mp3 = null
     var ganar_mp3 = null
@@ -111,7 +114,10 @@
                                                             clearTimeout(delay_animation)
                                                             delay_animation = null
 
-                                                            instrucciones.className = 'instrucciones-off'
+                                                            if(!ismobile){
+                                                                instrucciones.className = 'instrucciones-off'
+                                                            }
+
                                                             unsetCargador({callBack:function(){
                                                                 setGame()
                                                             }})

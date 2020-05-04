@@ -1,3 +1,13 @@
+* {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
 html,body{
     width: 845px;
     height: 507px;
@@ -190,7 +200,10 @@ html,body{
     float: left;
     margin-left: 10px;
     margin-left: calc((100% - (115px * 6)) / 12);
+    margin-left: -moz-calc((100% - (115px * 6)) / 12);
+    margin-right: 10px;
     margin-right: calc((100% - (115px * 6)) / 12);
+    margin-right: -moz-calc((100% - (115px * 6)) / 12);
     margin-bottom: 12px;
     cursor: pointer;
     perspective: 400px;
